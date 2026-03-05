@@ -104,7 +104,7 @@ export const logout = async (req, res) => {
       sameSite: "None",
       expires: new Date(0),
     });
-    res.status(200).json({ message: "login Successfully", token });
+    res.status(200).json({ message: "login Successfully" });
   } catch (error) {
     return res.status(500).json("Server Error");
   }
